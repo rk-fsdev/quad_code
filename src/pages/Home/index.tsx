@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         flexDir={{ base: 'column', xl: 'row' }}
       >
         <Box
-          px="135px"
+          pl="135px"
           py="96px"
           zIndex="2"
           width={{ base: '100%', xl: '50%' }}
