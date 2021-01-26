@@ -25,17 +25,28 @@ const ParagraphWithIcon: React.FC<Props> = ({
 }: Props) => {
   return (
     <Box color="brand.black">
-      <Image src={iconUrl} aria-label={iconUrl} width="60px" height="60px" />
+      <Image
+        src={iconUrl}
+        aria-label={iconUrl}
+        width={{ base: '30px', md: '45px', xl: '60px' }}
+        height={{ base: '30px', md: '45px', xl: '60px' }}
+      />
       <Text
         as="h3"
         fontWeight="700"
-        fontSize="28px"
+        fontSize={{ base: '14px', md: '20px', xl: '28px' }}
         lineHeight="130%"
-        mt="32px"
+        mt={{ base: '12px', md: '24px', xl: '32px' }}
       >
         {title}
       </Text>
-      <Text as="p" fontWeight="400" fontSize="18px" lineHeight="140%" mt="16px">
+      <Text
+        as="p"
+        fontWeight="400"
+        fontSize={{ base: '10px', md: '14px', xl: '18px' }}
+        lineHeight="140%"
+        mt={{ base: '8px', md: '12px', xl: '16px' }}
+      >
         {subTitle}
       </Text>
     </Box>
